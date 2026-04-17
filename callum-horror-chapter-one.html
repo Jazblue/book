@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chapter One: The House on Alder Lane</title>
+  <style>
+    :root {
+      --bg: #0e1116;
+      --panel: #151a21;
+      --text: #e7e3dc;
+      --muted: #a9a29a;
+      --accent: #c86f6f;
+      --accent2: #8ea7c7;
+      --border: #2a313c;
+      --shadow: rgba(0,0,0,0.35);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      background: radial-gradient(circle at top, #1a2028 0%, var(--bg) 45%, #090b0e 100%);
+      color: var(--text);
+      line-height: 1.7;
+    }
+    .wrap {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 32px 20px 56px;
+    }
+    .hero {
+      background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 20px 50px var(--shadow);
+    }
+    .hero img {
+      width: 100%;
+      display: block;
+      max-height: 640px;
+      object-fit: cover;
+      background: #0b0d11;
+    }
+    .hero-copy {
+      padding: 20px 22px 24px;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      line-height: 1.1;
+      letter-spacing: 0.01em;
+    }
+    .sub {
+      color: var(--muted);
+      margin: 0;
+      font-size: 1rem;
+    }
+    .controls {
+      margin: 22px 0 18px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+    }
+    button, select {
+      background: var(--panel);
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 11px 14px;
+      font: inherit;
+    }
+    button {
+      cursor: pointer;
+      transition: transform .12s ease, background .2s ease, border-color .2s ease;
+    }
+    button:hover {
+      transform: translateY(-1px);
+      border-color: #4a5564;
+    }
+    button.primary {
+      background: linear-gradient(180deg, #a64e57, #7b3139);
+      border-color: #8f454d;
+    }
+    button.secondary {
+      background: linear-gradient(180deg, #344154, #253142);
+      border-color: #415068;
+    }
+    .status {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    .card {
+      margin-top: 16px;
+      background: rgba(21,26,33,0.9);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 26px 24px;
+      box-shadow: 0 20px 50px var(--shadow);
+    }
+    .story {
+      font-size: 1.14rem;
+    }
+    .story p {
+      margin: 0 0 1.15em;
+    }
+    .note {
+      margin-top: 14px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    .pill {
+      display: inline-block;
+      padding: 5px 10px;
+      border-radius: 999px;
+      background: rgba(200,111,111,0.12);
+      border: 1px solid rgba(200,111,111,0.35);
+      color: #f0c6c6;
+      margin-bottom: 12px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHBwgHBgoICAoKCgkLDhgQDg0NDh0VFhEYIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQ0NDw0NDisZFRkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIA+gD1AMBIgACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAABQYDBAcCAf/EAEUQAAIBAgMEBQYDBgQEBwAAAAECEQADBBIhMQVBUQYiYXGBEzKRobHB0RQjQlJy4RQzYnKSorLxJENTosPS8RX/xAAYAQEBAQEBAAAAAAAAAAAAAAAAAgEDBP/EACIRAQEBAQEAAgMBAQEAAAAAAAABAhEDIRIxQRMUImFx8P/aAAwDAQACEQMRAD8A+4REQEREBERAREQEREBERAREQEREBERAREQEREBERAREQfW1P2u9m7T1Y4w9m4rUQq0m0M8Qk0kW5X1m3lMZ8bXr2+6p4n8fW8yqkq3p2kZVw0e1h7m9p2bWQ2h3xWmZ3aP8AIq8s7mT1P9v1fR5bJ2a8H8Ww2M0v3cH1rWvL1K7ZK0q0H9M5vZk8o7m2m5bWn2L7mVt8x7XQ3zY1m1vQj5lW3m0lW6k6iGqQF0M7c6o9g9w3a1Nf6z1s1Q4w0k9fV6rQw2aS8bq4mYv6rZ3uR9m4L8v3m7rG4u3tT1pWm1J8H0WbJ7k5m2fQ0n7m8O0a6z6b5e7bX2uU1pM6c0i7QYH4X9pJHqz8v0h9h1K2g9o7N7t2WvJq8mW5H0i4p8r2c3Qf1xZ9m3Vd0m3n4c0qS3k0o0u3m0v7fK+3Wc5g0uYl0c7XzXK6d9b6v2Y8b8s6r8YvVvM7l8uV9Yt1m1d0hY8bP6j3m0r4n8W3m2u1P1tqVZxVZQqKqQKkqAAVVQABVUAAVVQABVUAAVVQABVUAAVVQABVUAAVVQABVUAAVVQABVUAAVVQABVUAAVVQABVUAAVVQABVUAAVVQABVUAAVVQABVUAf/2Q==" alt="Callum alone in his dim bedroom, monitor glow against a bleak suburban view" />
+      <div class="hero-copy">
+        <div class="pill">Illustrated horror chapter</div>
+        <h1>Chapter One: The House on Alder Lane</h1>
+        <p class="sub">With natural narrated audio and a browser voice fallback.</p>
+      </div>
+    </section>
+
+    <div class="controls">
+      <button class="primary" id="playAudioBtn">▶ Play narrated audio</button>
+      <button class="secondary" id="pauseAudioBtn">⏸ Pause audio</button>
+      <button class="secondary" id="stopAudioBtn">■ Stop audio</button>
+      <button class="secondary" id="playBtn">Use browser voice instead</button>
+      <button class="secondary" id="pauseBtn">⏸ Pause browser voice</button>
+      <button class="secondary" id="stopBtn">■ Stop browser voice</button>
+      <select id="voiceSelect" aria-label="Voice selection"></select>
+      <span class="status" id="status">Ready.</span>
+    </div>
+    <audio id="narration" preload="auto" controls style="width:100%; margin-bottom: 18px;">
+      <source src="callum-horror-chapter-one.mp3" type="audio/mpeg" />
+    </audio>
+
+    <section class="card story" id="story">
+      <p>You want atmosphere, do you. Fine.</p>
+      <p>I’m reading this from my kitchen, which is about as inspiring a place as a tax bill. The bulb above the cooker has that weak yellow look that makes everything seem diseased, and the lino near the sink is curling up at one corner no matter what I do with it. I’ve got a mug of tea gone half-cold and a packet of salt-and-vinegar crisps I wasn’t going to open, except now I have, because once a thing is ruined you may as well lean in properly.</p>
+      <p>Anyway.</p>
+      <p>This begins with a boy called Callum, though at nineteen “boy” is generous and “man” is optimistic, so really he was just one of those in-between creatures, all elbows and tired eyes and private grievances. The sort of young person you see standing outside off-licences in the rain, pretending not to hate everyone who passes.</p>
+      <p>He lived on Alder Lane with his mother and his little brother, and if you’ve ever seen one of those suburban streets where all the houses look as if they were assembled from leftover disappointment, then you already know the place.</p>
+      <p>Pebble-dash walls. Small front gardens with bald patches where grass had given up. Wheelie bins tilted by side gates. Net curtains. Satellite dishes. A plastic tricycle lying on its side in somebody’s drive as if abandoned during a tiny domestic emergency. The whole road looked permanently damp, even in dry weather. Some places absorb misery and hold it. Alder Lane was one of them.</p>
+      <p>Callum’s room was at the front of the house, overlooking the street.</p>
+      <p>That mattered.</p>
+      <p>He sat there most evenings at his desk, in the blue-white wash of a blank computer screen, while dusk pressed itself against the windows and the houses across the road faded into shadow. His room was cramped in the ordinary way, single bed shoved against the wall, cheap curtains, a desk crowded with old cables and mugs and bits of dead electronics, but there was something about the way he occupied it that made it feel even smaller. As though he had folded himself into that corner of the house so long ago that everything else had just grown around him and stopped asking questions.</p>
+      <p>The monitor lit half his face and left the other half in shadow. That suited him.</p>
+      <p>He wasn’t handsome, exactly. Not in any polished, obvious way. Too thin. Too pale. Eyes ringed dark from bad sleep and too much screen light. But he had a face that made sense once you looked at it properly, sharp in the way lonely people sometimes are. Like all the softness had been worn off by disappointment.</p>
+      <p>Outside his window, evening collected itself over the estate.</p>
+      <p>Inside, the house was doing what it always did.</p>
+      <p>His mother was downstairs banging about in the kitchen, every movement carrying the suggestion of somebody who had been interrupted too many times by a life she had never fully agreed to. Cupboard doors shut harder than they needed to. The kettle landed on its stand with a clack. A spoon struck against a mug. The radio muttered in the background with one of those falsely cheerful presenters who sound as if they’d keep smiling through a collapse of civilisation.</p>
+      <p>His little brother Owen was moaning about cereal or socks or homework or whatever children that age are always moaning about. He was nine, all thin wrists and solemn eyes, and he had the unfortunate sensitivity common to younger siblings in strained houses. He felt every shift in mood as if it were weather.</p>
+      <p>Callum kept his eyes on the screen.</p>
+      <p>That was his talent, if you like. Not computers exactly, though he was good with them. No, his talent was noticing things. Following them. Prying at the edges. He spent nights in strange corners of the internet, old forums, cracked-software boards, archived pages no one else would think to search, local admin panels left exposed by idiots who assumed no one would ever look. He wasn’t some glamorous criminal mastermind. Let’s not embarrass ourselves. He just had patience, a suspicious mind, and very little else to do.</p>
+      <p>People left all sorts of doors open online.</p>
+      <p>Callum liked trying handles.</p>
+      <p>Sometimes it paid, a bit. Unblocking second-hand phones for lads on the estate, fixing rotten laptops, getting old printers to work for people too cheap to replace them. Mostly, though, it was less about money and more about control. The world made more sense to him when it leaked.</p>
+      <p>His phone buzzed beside the keyboard.</p>
+      <p>Once.</p>
+      <p>Then again.</p>
+      <p>He glanced at it and saw what he had expected to see.</p>
+      <p>Missed calls from Romano’s Pizza. Several of them. Two voicemails, which he had no intention of listening to, and one final text from his manager.</p>
+      <p><strong>Don’t bother coming back.</strong></p>
+      <p>There it was.</p>
+      <p>The official end to the world’s most humiliating job.</p>
+      <p>Callum looked at the message for a long time, then leaned back in the chair and laughed quietly through his nose. Not because it was funny. More because it was exactly right. He had hated the job so thoroughly that being fired from it felt less like a crisis and more like a late administrative detail.</p>
+      <p>Delivering pizzas sounds harmless until you do it.</p>
+      <p>Then it’s just wet nights, cold fingers, and bright front doors opening onto other people’s lives. Families in warm kitchens. Couples in dressing gowns. Students already drunk. Men who say, “Took your time, mate,” as if you personally baked the thing. Dogs going mad behind frosted glass. Children snatching boxes before their parents have even paid. Every shift was an endless procession of domestic scenes in which Callum appeared only briefly, unwanted and underlit, before vanishing back into the dark with the smell of cheese trapped in his clothes.</p>
+      <p>He’d stopped trying weeks ago.</p>
+      <p>Stopped caring first, then stopped arriving on time, then stopped turning up altogether. That was usually how things ended with him. Not through one grand collapse. Just neglect, prolonged until reality noticed.</p>
+      <p>At this point I went to the bathroom, if that matters to you. Tiny room, freezing seat, mirror with a black patch in the corner where the silver’s rotting away at the back. I looked dreadful in it, obviously. Everyone does in bathroom light. There’s something vulgar about seeing yourself under a bulb like that. No mystery left. Just pores and regret.</p>
+      <p>Anyway, when I came back I brought the crisps, because this sort of story deserves crunching.</p>
+      <p>Callum’s father was absent, which in stories usually means there was some noble tragedy or great mystery attached, but in this case he was simply gone in the ordinary, shabby way men often are. Callum remembered almost nothing. The smell of aftershave once. A rough chin. The shape of someone tall passing through a doorway. Mostly the father survived as a phrase his mother used when angry.</p>
+      <p>You’re just like him.</p>
+      <p>Which is a convenient thing to say, really, because it lets the missing man keep disappointing everyone from a safe distance.</p>
+      <p>His mother, Deborah, had stayed. Which sounds noble until you meet someone who has had to stay too long. She was thirty-eight and looked ten years older in bad light. Worked shifts at a supermarket. Smoked out the back when she thought Owen wouldn’t notice. Had the posture of somebody perpetually bracing for the next bill. She still had traces of prettiness about the face when she was tired enough not to arrange it into hardness, but mostly what Callum saw when he looked at her was effort. Effort curdled into resentment.</p>
+      <p>And the house. God, the house.</p>
+      <p>Not a dramatic house. Not ivy and graveyards and crows at the chimney. Worse than that. A normal little British house with mould in the bathroom, patched carpet on the stairs, and a radiator in the front room that clanked all winter without ever making anyone warm. The sort of house where the walls were thin enough to hear every argument but thick enough to trap them afterward.</p>
+      <p>The bathroom ceiling had a brown bloom over the shower that returned no matter how much bleach Deborah used. The landing smelled faintly of damp socks. The kitchen window never opened properly. If horror has a natural habitat, I honestly think it’s places exactly like that. Small places. Tired places. Places with nowhere for fear to go except into the wallpaper.</p>
+      <p>Callum stood from the desk and moved the curtain aside with two fingers.</p>
+      <p>Alder Lane sat before him under the weak evening light, all washed brick and wet concrete. He knew every house by shape alone. The old couple at number three who argued in the garden in summer. The woman at eleven who worked nights and slept with her television on loud enough for the whole road. The family with too many cars and too little drive. The empty patch of hedge where kids once set fire to a bin.</p>
+      <p>And opposite, number nine.</p>
+      <p>Always number nine.</p>
+      <p>If you ask me, every street has one house that seems to be keeping a secret badly. Not enough to expose itself, just enough that people feel odd around it and never say why. Number nine had that quality. Cream curtains always shut. No one seen entering. No one seen leaving. No parcels. No lights showing. Nothing.</p>
+      <p>Yet Callum knew, in the same way some people know they’re being watched before they turn around, that the place was occupied.</p>
+      <p>He’d come back late from deliveries sometimes and felt it instantly. Standing under the streetlamp unfastening his helmet, he would have the distinct sensation that somebody across the road had already been waiting at the upstairs window, watching him before he’d even turned the engine off.</p>
+      <p>Only whenever he looked directly, there was nothing to prove it.</p>
+      <p>He’d tried investigating, naturally.</p>
+      <p>That was where his sort of mind went when ordinary discomfort wasn’t enough. He’d searched records, old cached pages, scraps of council data. Found a name once, years out of date, and a mention of probate on a legal archive that led nowhere useful. He checked social media and found nothing convincing. No neighbourhood chatter. No photographs. Even the local Facebook group, full of curtain twitchers and minor outrages about bins, seemed to skip neatly over number nine as if the house existed just outside ordinary complaint.</p>
+      <p>That bothered him more than if they’d all sworn the place was haunted.</p>
+      <p>His mother shouted from downstairs.</p>
+      <p>“Callum!”</p>
+      <p>He let the curtain fall.</p>
+      <p>“What?”</p>
+      <p>“Don’t you what me. Get down here.”</p>
+      <p>He sighed and headed for the door.</p>
+      <p>The landing was dim. The weak bulb above the stairs turned the wallpaper the colour of stale teeth. The bathroom door stood ajar and, as he passed, he caught sight of the sink cluttered with toothbrushes, a cracked soap dish, and Owen’s Spider-Man flannel hanging damp over the side. The whole place had the look of a life being maintained one irritation at a time.</p>
+      <p>In the kitchen, Deborah stood by the counter in her uniform, hair pinned up too tight, face set in the way that meant she had already imagined the worst and was now prepared to hear it confirmed. Owen sat at the table with a bowl of cereal going soggy in front of him, spoon paused midway to his mouth. He looked between them as if waiting for instructions on how nervous to be.</p>
+      <p>“Well?” Deborah said.</p>
+      <p>Callum leaned in the doorway. “What?”</p>
+      <p>“I had a call from your work.”</p>
+      <p>There was no point pretending. “I know.”</p>
+      <p>“You know.”</p>
+      <p>“Yes.”</p>
+      <p>“Were you planning to tell me you didn’t go in?”</p>
+      <p>He shrugged.</p>
+      <p>A tiny movement, really. Barely anything. But it tipped her from tension into fury at once.</p>
+      <p>“For God’s sake, Callum.”</p>
+      <p>“I got fired.”</p>
+      <p>Owen lowered his spoon.</p>
+      <p>Deborah stared at her son, and what moved across her face then was not surprise but a grim kind of confirmation. Like a doctor looking at a scan that tells them what they already knew.</p>
+      <p>“Of course you did,” she said softly.</p>
+      <p>“It was rubbish anyway.”</p>
+      <p>“Rubbish,” she repeated. “Do you know what rubbish is? Rubbish is me eating toast over this sink because we’re not wasting the electric on the grill. Rubbish is me working every Saturday for six months because your school shoes,” she pointed at Owen, “split at the front and your brother needed money for petrol and suddenly everything’s my problem again.”</p>
+      <p>“Mum,” Owen whispered.</p>
+      <p>“Don’t.”</p>
+      <p>Callum looked at the floor.</p>
+      <p>The lino by the fridge had peeled at one edge. Someone, probably Owen, had dropped jam there that morning and wiped it badly. Stupid, the things you notice when you don’t want to look at a person.</p>
+      <p>Deborah took one slow breath. “I cannot do this on my own.”</p>
+      <p>There it was. The true sentence.</p>
+      <p>Not about the job. Not really. About him. His age. His drifting. The way he had remained in the house past the point where she had imagined him leaving.</p>
+      <p>“I know,” he said.</p>
+      <p>“No, you don’t.”</p>
+      <p>The room seemed to constrict around them. Fridge humming. Radio talking nonsense. Owen’s cereal gone soft. The faint sound of rain beginning again at the back of the house.</p>
+      <p>Then everything stopped.</p>
+      <p>Not literally. But enough.</p>
+      <p>A pocket of silence opened in the middle of the kitchen, so sudden and complete that Callum felt it physically, as if the house had inhaled and forgotten to exhale.</p>
+      <p>His head turned toward the window over the sink.</p>
+      <p>From there you could just see the upstairs front of number nine between the curtains and the frame.</p>
+      <p>Something moved.</p>
+      <p>Very slightly.</p>
+      <p>The cream curtain shifted inward.</p>
+      <p>A shape stood behind it.</p>
+      <p>Tall. Still. Human, or near enough.</p>
+      <p>Callum’s breath caught.</p>
+      <p>Deborah was still talking, still angry, but her voice had gone tinny and far away. He was looking past her entirely now, every nerve drawing tight.</p>
+      <p>The shape remained where it was.</p>
+      <p>Then, with unbearable slowness, it leaned closer to the window from the other side of the curtain, enough that he could make out the suggestion of a head, a shoulder, the intimate nearness of something standing there deliberately.</p>
+      <p>Watching him.</p>
+      <p>Not the kitchen.</p>
+      <p>Not his mother.</p>
+      <p>Him.</p>
+      <p>Callum stepped forward before he meant to. “Mum.”</p>
+      <p>“What?”</p>
+      <p>But the moment he spoke, the curtain twitched.</p>
+      <p>The figure withdrew.</p>
+      <p>Gone.</p>
+      <p>Only the blank cream folds remained, hanging straight in the weak blue evening.</p>
+      <p>For a second no one moved.</p>
+      <p>Then Deborah followed his line of sight and frowned. “What are you looking at?”</p>
+      <p>Callum didn’t answer.</p>
+      <p>Because he knew two things at once, with that awful clean certainty people sometimes get just before their life becomes something else.</p>
+      <p>First, there had been someone there.</p>
+      <p>And second, whoever stood behind that curtain had not been hiding from him.</p>
+      <p>They had been waiting for him to notice.</p>
+    </section>
+
+    <p class="note">Tip: use the narrated audio first. It should sound much more natural than the browser voice. The browser voice is still there as a fallback.</p>
+  </div>
+
+  <script>
+    const playBtn = document.getElementById('playBtn');
+    const pauseBtn = document.getElementById('pauseBtn');
+    const stopBtn = document.getElementById('stopBtn');
+    const playAudioBtn = document.getElementById('playAudioBtn');
+    const pauseAudioBtn = document.getElementById('pauseAudioBtn');
+    const stopAudioBtn = document.getElementById('stopAudioBtn');
+    const narration = document.getElementById('narration');
+    const voiceSelect = document.getElementById('voiceSelect');
+    const statusEl = document.getElementById('status');
+    const storyEl = document.getElementById('story');
+    let voices = [];
+    let utterance = null;
+
+    function getStoryText() {
+      return storyEl.innerText
+        .replace(/\s+/g, ' ')
+        .replace('Anyway.', 'Anyway...')
+        .trim();
+    }
+
+    function preferredVoice(list) {
+      const britishFemale = list.find(v => {
+        const name = (v.name || '').toLowerCase();
+        const lang = (v.lang || '').toLowerCase();
+        return (lang.includes('en-gb') || lang.includes('en_gb')) &&
+          (name.includes('female') || name.includes('susan') || name.includes('serena') || name.includes('libby') || name.includes('hazel') || name.includes('kate') || name.includes('samantha'));
+      });
+      if (britishFemale) return britishFemale;
+
+      const britishAny = list.find(v => {
+        const lang = (v.lang || '').toLowerCase();
+        return lang.includes('en-gb') || lang.includes('en_gb');
+      });
+      if (britishAny) return britishAny;
+
+      const englishFemale = list.find(v => {
+        const name = (v.name || '').toLowerCase();
+        const lang = (v.lang || '').toLowerCase();
+        return lang.startsWith('en') &&
+          (name.includes('female') || name.includes('zira') || name.includes('aria') || name.includes('samantha') || name.includes('victoria'));
+      });
+      if (englishFemale) return englishFemale;
+
+      return list[0] || null;
+    }
+
+    function populateVoices() {
+      voices = window.speechSynthesis.getVoices();
+      voiceSelect.innerHTML = '';
+      if (!voices.length) {
+        const opt = document.createElement('option');
+        opt.textContent = 'No voices found yet';
+        voiceSelect.appendChild(opt);
+        return;
+      }
+      voices.forEach((voice, i) => {
+        const opt = document.createElement('option');
+        opt.value = String(i);
+        opt.textContent = `${voice.name} (${voice.lang})`;
+        voiceSelect.appendChild(opt);
+      });
+      const preferred = preferredVoice(voices);
+      const idx = voices.findIndex(v => v === preferred);
+      if (idx >= 0) voiceSelect.value = String(idx);
+      statusEl.textContent = `Ready. Selected voice: ${preferred ? preferred.name : 'default'}.`;
+    }
+
+    function stopReading() {
+      window.speechSynthesis.cancel();
+      utterance = null;
+      statusEl.textContent = 'Stopped.';
+    }
+
+    function playReading() {
+      stopReading();
+      const text = getStoryText();
+      utterance = new SpeechSynthesisUtterance(text);
+      const selected = voices[Number(voiceSelect.value)] || preferredVoice(voices);
+      if (selected) utterance.voice = selected;
+      utterance.lang = selected?.lang || 'en-GB';
+      utterance.rate = 0.92;
+      utterance.pitch = 0.92;
+      utterance.volume = 1;
+      utterance.onstart = () => {
+        statusEl.textContent = `Reading with ${selected ? selected.name : 'default voice'}...`;
+      };
+      utterance.onend = () => {
+        statusEl.textContent = 'Finished reading.';
+      };
+      utterance.onerror = (e) => {
+        statusEl.textContent = `Speech error: ${e.error || 'unknown error'}.`;
+      };
+      window.speechSynthesis.speak(utterance);
+    }
+
+    playAudioBtn.addEventListener('click', async () => {
+      stopReading();
+      try {
+        await narration.play();
+        statusEl.textContent = 'Playing narrated audio.';
+      } catch (e) {
+        statusEl.textContent = 'Could not play narrated audio automatically.';
+      }
+    });
+    pauseAudioBtn.addEventListener('click', () => {
+      if (narration.paused) {
+        narration.play();
+        statusEl.textContent = 'Resumed narrated audio.';
+      } else {
+        narration.pause();
+        statusEl.textContent = 'Paused narrated audio.';
+      }
+    });
+    stopAudioBtn.addEventListener('click', () => {
+      narration.pause();
+      narration.currentTime = 0;
+      statusEl.textContent = 'Stopped narrated audio.';
+    });
+
+    narration.addEventListener('ended', () => {
+      statusEl.textContent = 'Finished narrated audio.';
+    });
+
+    playBtn.addEventListener('click', () => {
+      narration.pause();
+      playReading();
+    });
+    pauseBtn.addEventListener('click', () => {
+      if (window.speechSynthesis.speaking && !window.speechSynthesis.paused) {
+        window.speechSynthesis.pause();
+        statusEl.textContent = 'Paused.';
+      } else if (window.speechSynthesis.paused) {
+        window.speechSynthesis.resume();
+        statusEl.textContent = 'Resumed.';
+      }
+    });
+    stopBtn.addEventListener('click', stopReading);
+
+    populateVoices();
+    if ('speechSynthesis' in window) {
+      window.speechSynthesis.onvoiceschanged = populateVoices;
+    } else {
+      statusEl.textContent = 'This browser does not support speech synthesis.';
+    }
+  </script>
+</body>
+</html>
