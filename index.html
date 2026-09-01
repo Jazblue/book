@@ -29,7 +29,14 @@
       box-shadow: var(--shadow);
       backdrop-filter: blur(6px);
     }
-    .hero { padding: 28px; margin-bottom: 22px; }
+    .hero { padding: 0; margin-bottom: 22px; overflow: hidden; }
+    .hero img {
+      width: 100%;
+      max-height: 420px;
+      object-fit: cover;
+      display: block;
+    }
+    .hero-text { padding: 28px; }
     .eyebrow {
       display: inline-block;
       font-size: 12px;
@@ -39,18 +46,33 @@
       margin-bottom: 10px;
     }
     h1 { margin: 0 0 10px; font-size: clamp(30px, 5vw, 48px); line-height: 1.08; }
+    .sub { color: var(--muted); font-size: 18px; margin: 0; }
     .panel { padding: 22px; margin-bottom: 18px; }
     a { color: #c7d2ff; text-decoration: none; }
     ul { padding-left: 20px; color: var(--muted); }
     li { margin-bottom: 10px; font-size: 18px; }
+    .photo-credit {
+      text-align: right;
+      font-size: 12px;
+      color: var(--muted);
+      padding: 8px 28px 20px;
+      opacity: 0.6;
+    }
+    .photo-credit a { color: var(--muted); }
   </style>
 </head>
 <body>
   <div class="wrap">
     <section class="hero">
-      <div class="eyebrow">Book</div>
-      <h1>Callum</h1>
-      <p class="sub">Chapters 1–10</p>
+      <img src="assets/mother-two-sons.jpg" alt="Mother with her two sons" loading="eager" />
+      <div class="hero-text">
+        <div class="eyebrow">Book</div>
+        <h1>Callum</h1>
+        <p class="sub">Chapters 1–10</p>
+      </div>
+      <p class="photo-credit">
+        Photo by <a href="https://www.pexels.com/photo/family-portrait-of-mother-with-two-sons-34796138/" target="_blank" rel="noopener">Jhonatan_rios_art</a> · <a href="https://www.pexels.com/license/" target="_blank" rel="noopener">Pexels License</a>
+      </p>
     </section>
 
     <section class="panel">
