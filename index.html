@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Callum — Book Index</title>
+  <style>
+    :root {
+      --bg: #0f1115;
+      --panel: #171a21;
+      --text: #f3f4f6;
+      --muted: #a9b0be;
+      --border: rgba(255,255,255,0.08);
+      --shadow: 0 20px 50px rgba(0,0,0,0.35);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      background: radial-gradient(circle at top, #1c2233 0%, var(--bg) 55%);
+      color: var(--text);
+      line-height: 1.7;
+    }
+    .wrap { max-width: 980px; margin: 0 auto; padding: 32px 20px 60px; }
+    .hero, .panel {
+      background: rgba(23, 26, 33, 0.92);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(6px);
+    }
+    .hero { padding: 28px; margin-bottom: 22px; }
+    .eyebrow {
+      display: inline-block;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #d9c27a;
+      margin-bottom: 10px;
+    }
+    h1 { margin: 0 0 10px; font-size: clamp(30px, 5vw, 48px); line-height: 1.08; }
+    .panel { padding: 22px; margin-bottom: 18px; }
+    a { color: #c7d2ff; text-decoration: none; }
+    ul { padding-left: 20px; color: var(--muted); }
+    li { margin-bottom: 10px; font-size: 18px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <div class="eyebrow">Book</div>
+      <h1>Callum</h1>
+      <p class="sub">Chapters 1–6</p>
+    </section>
+
+    <section class="panel">
+      <h2>Chapters</h2>
+      <ul>
+        <li><a href="callum-chapter-one-complete.html">Chapter One: The House on Alder Lane</a></li>
+        <li><a href="callum-chapter-two.html">Chapter Two: The Hole in the Floor</a></li>
+        <li><a href="callum-chapter-three.html">Chapter Three: The Noise From Upstairs</a></li>
+        <li><a href="callum-chapter-four.html">Chapter Four: The Threshold</a></li>
+        <li><a href="callum-chapter-five.html">Chapter Five: The Back Door</a></li>
+        <li><a href="callum-chapter-six.html">Chapter Six: The Threshold Within</a></li>
+      </ul>
+    </section>
+  </div>
+</body>
+</html>
