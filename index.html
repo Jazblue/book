@@ -120,30 +120,9 @@
     <footer style="text-align:center;padding:30px;color:#666;border-top:1px solid #333;margin-top:40px;">
       <p>Callum · A horror novel by Jazblue</p>
       <p style="margin-top:14px;color:#666;font-size:13px;">
-        Visitors: <span id="visitor-count">loading…</span>
+        Visitors: <img src="https://tallywire.cronpulse.workers.dev/hit/callum-book-visitors?unique=1" alt="Visitor counter" style="height:20px;vertical-align:middle;" />
       </p>
-      <noscript><span style="color:#666;font-size:12px;">(enable JavaScript to see live count)</span></noscript>
     </footer>
-
-    <script>
-      (function() {
-        try {
-          fetch('https://countapi.mileshilliard.com/api/v1/hit/callum-book')
-            .then(r => r.json())
-            .then(d => {
-              var el = document.getElementById('visitor-count');
-              if (el) el.textContent = Number(d.value || 0).toLocaleString();
-            })
-            .catch(() => {
-              var el = document.getElementById('visitor-count');
-              if (el) el.textContent = 'unavailable';
-            });
-        } catch (e) {
-          var el = document.getElementById('visitor-count');
-          if (el) el.textContent = 'unavailable';
-        }
-      })();
-    </script>
   </div>
 </body>
 </html>
