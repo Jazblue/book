@@ -129,5 +129,20 @@
       <p>The shed at the bottom of the garden was small and cold and full of dust. But it was his. And for now, that had to be enough.</p>
     </section>
   </div>
+
+    <script>
+      (function() {
+        try {
+          const key = 'book_visits';
+          const count = parseInt(localStorage.getItem(key) || '0', 10) + 1;
+          localStorage.setItem(key, String(count));
+          const el = document.getElementById('visitor-count');
+          if (el) el.textContent = 'Visitor count: ' + count.toLocaleString();
+        } catch (e) {
+          var el = document.getElementById('visitor-count');
+          if (el) el.textContent = 'Visitor count: unavailable';
+        }
+      })();
+    </script>
 </body>
 </html>

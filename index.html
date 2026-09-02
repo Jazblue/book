@@ -116,6 +116,25 @@
         <li><a href="callum-chapter-fifteen.html">Chapter Fifteen: The Knock</a></li>
       </ul>
     </section>
+    <footer style="text-align:center;padding:30px;color:#666;border-top:1px solid #333;margin-top:40px;">
+      <p>Callum · A horror novel by Jazblue</p>
+      <p style="margin-top:14px;color:#666;font-size:13px;" id="visitor-count">Loading visitor count...</p>
+    </footer>
+
+    <script>
+      (function() {
+        try {
+          const key = 'book_visits';
+          const count = parseInt(localStorage.getItem(key) || '0', 10) + 1;
+          localStorage.setItem(key, String(count));
+          const el = document.getElementById('visitor-count');
+          if (el) el.textContent = 'Visitor count: ' + count.toLocaleString();
+        } catch (e) {
+          var el = document.getElementById('visitor-count');
+          if (el) el.textContent = 'Visitor count: unavailable';
+        }
+      })();
+    </script>
   </div>
 </body>
 </html>
