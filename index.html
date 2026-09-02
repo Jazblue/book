@@ -68,6 +68,7 @@
     }
     h1 { margin: 0 0 10px; font-size: clamp(30px, 5vw, 48px); line-height: 1.08; }
     .sub { color: var(--muted); font-size: 18px; margin: 0; }
+    .chapter-count { color: #d9c27a; font-size: 16px; margin: 0 0 6px; }
     .panel { padding: 22px; margin-bottom: 18px; }
     a { color: #c7d2ff; text-decoration: none; }
     ul { padding-left: 20px; color: var(--muted); }
@@ -89,6 +90,7 @@
       <div class="hero-text">
         <div class="eyebrow">Book</div>
         <h1>Callum</h1>
+<p class="chapter-count">Chapters: <span id="chapter-count">15</span></p>
         <p class="sub">Chapters 1–15</p>
       </div>
       <p class="photo-credit">
@@ -118,23 +120,13 @@
     </section>
     <footer style="text-align:center;padding:30px;color:#666;border-top:1px solid #333;margin-top:40px;">
       <p>Callum · A horror novel by Jazblue</p>
-      <p style="margin-top:14px;color:#666;font-size:13px;" id="visitor-count">Loading visitor count...</p>
+      <p style="margin-top:14px;color:#666;font-size:13px;">
+        Visitors: <span class="counter" data-key="callum-book">loading…</span>
+      </p>
+      <noscript><span style="color:#666;font-size:12px;">(enable JavaScript to see live count)</span></noscript>
     </footer>
 
-    <script>
-      (function() {
-        try {
-          const key = 'book_visits';
-          const count = parseInt(localStorage.getItem(key) || '0', 10) + 1;
-          localStorage.setItem(key, String(count));
-          const el = document.getElementById('visitor-count');
-          if (el) el.textContent = 'Visitor count: ' + count.toLocaleString();
-        } catch (e) {
-          var el = document.getElementById('visitor-count');
-          if (el) el.textContent = 'Visitor count: unavailable';
-        }
-      })();
-    </script>
+    <script async src="https://cdn.jsdelivr.net/npm/counterapi@1.0.0/dist/counter.min.js"></script>
   </div>
 </body>
 </html>
