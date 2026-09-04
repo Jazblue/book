@@ -1,0 +1,97 @@
+{
+"@context": "https://schema.org",
+"@type": "WebPage",
+"name": "Callum, Chapter 17",
+"url": "https://jazblue.github.io/book/callum-chapter-seventeen.html"
+}
+Callum, Chapter 17
+:root {
+--bg: #0f1115;
+--panel: #171a21;
+--panel-2: #202532;
+--text: #f3f4f6;
+--muted: #a9b0be;
+--accent: #8b9fff;
+--border: rgba(255,255,255,0.08);
+--shadow: 0 20px 50px rgba(0,0,0,0.35);
+}
+* { box-sizing: border-box; }
+body {
+margin: 0;
+font-family: Georgia, "Times New Roman", serif;
+background: radial-gradient(circle at top, #1c2233 0%, var(--bg) 55%);
+color: var(--text);
+line-height: 1.7;
+}
+.wrap { max-width: 980px; margin: 0 auto; padding: 32px 20px 60px; }
+.hero, .panel {
+background: rgba(23, 26, 33, 0.92);
+border: 1px solid var(--border);
+border-radius: 18px;
+box-shadow: var(--shadow);
+backdrop-filter: blur(6px);
+}
+.hero { padding: 28px; margin-bottom: 22px; }
+.eyebrow {
+display: inline-block;
+font-size: 12px;
+text-transform: uppercase;
+letter-spacing: 0.12em;
+color: #d9c27a;
+margin-bottom: 10px;
+}
+h1 { margin: 0 0 10px; font-size: clamp(30px, 5vw, 48px); line-height: 1.08; }
+.sub { margin: 0; color: var(--muted); font-size: 18px; max-width: 44rem; }
+.panel { padding: 22px; margin-bottom: 18px; }
+.story { white-space: pre-wrap; font-size: 19px; }
+.story p { margin: 0 0 1.1em; }
+.back { display: inline-block; margin-bottom: 18px; color: #c7d2ff; }
+.audio-grid { display: grid; gap: 14px; }
+.audio-card {
+background: var(--panel-2);
+border: 1px solid var(--border);
+border-radius: 14px;
+padding: 16px;
+}
+.audio-card h3 {
+margin: 0 0 6px; font-size: 18px;
+font-family: Inter, system-ui, sans-serif;
+}
+.audio-card p {
+margin: 0 0 12px; color: var(--muted); font-size: 14px;
+font-family: Inter, system-ui, sans-serif;
+}
+audio { width: 100%; margin-bottom: 10px; }
+.chapter-nav a { color: #c7d2ff; text-decoration: none; font-family: Inter, system-ui, sans-serif; }
+.chapter-nav { padding: 0 4px; }
+&larr; Previous chapter Back to index &rarr;
+&larr; Back
+Callum
+Chapter Seventeen: The One Night That Stayed
+The summer had been too hot for secrets. By the time the Christmas party came round, Deborah was already carrying one she had not meant to keep.
+The plumber’s name was Ron. He was older by enough years that Deborah, when she first let him in through the back door, felt a flicker of the same caution she used to feel around her father. Not because he was unkind — he wasn’t. Because he moved through her kitchen like a man who had already seen the worst a house could do and had decided not to be frightened by it anymore.
+It was July. A red-hot summer, the kind that makes the curtains stick to the windowsill and the air in the hallway taste like dust and kettle limescale. Deborah had called him because the kitchen tap had started making a sound like a small animal being woken up. Ron arrived with a toolbox and a shirt already dark at the shoulders. He took one look at the sink, nodded, and said, “You’ve got a washer gone, love. Nothing dramatic.”
+He worked in a way that was almost conversational, which was how Deborah found herself telling him things she had not told anyone else. About Callum and the door he had put on his room. About the noise from upstairs at number nine. About the way the house seemed to breathe when she was the only one awake in it. Ron said very little in return. He just tightened, replaced, wiped his hands on his trousers, and nodded as though the strangeness of her week was simply another fitting he had to make secure.
+When he finished, he sat at the kitchen table and drank the mug of tea she had made him. The sun was full now, bright enough to show the cracks in the lino and the way the fridge magnet of Owen’s school drawing was starting to fall off. Deborah stood at the sink and watched him. He was the kind of man who carried grief like a tool belt — visible, but not something he talked about unless asked.
+“I’m sorry about your wife,” she said. Not because she knew, but because she had heard Mrs Hales from next door mention it in the way neighbours do, with the lowering of the voice and the sideways glance.
+Ron looked at his mug for a long time before he answered. “Car crash,” he said. “Last November. Dry road. Clear night. Still not here.”
+Deborah poured herself a cup and sat across from him. Outside, a boy on a bike went past screaming something she couldn’t make out. Inside, the kitchen was hot and ordinary and the kind of quiet that only exists in houses where someone has been taken away unexpectedly.
+“I still listen for the front door sometimes,” Ron said. “Like she’s just popped to the shop.”
+Deborah nodded. She had been doing the same thing for a different person for nineteen years. The difference was that Ron’s grief was fresh enough to still have a shape. Hers had been worn down by days and by the slow, ordinary business of pretending it had always been a choice.
+They did not talk about it again. Not in the way people imagine grief conversations go. There was no big reveal, no cathartic moment, no weeping into tea. There was just the summer, and the kitchen, and the way grief can make two people recognise each other without having to use words.
+When Ron came back three weeks later to check the washer, he brought a bag of tomatoes from his sister’s greenhouse. “Not much,” he said, “but they’re proper ones, not the supermarket rubbish.” Deborah cooked them with pasta and garlic and ate at the table with him while Owen was at his dad’s and Callum was shut in his room doing whatever it was he did with the lock on. It was the first time in a long time that Deborah had felt like someone was in the kitchen with her who wasn’t trying to fix her or judge her or leave a message he would never answer.
+In August, on a night when the heat wouldn’t lift and the street was so quiet she could hear the sea if she concentrated hard enough, Ron stayed. There was no seduction, not really. Just the ordinary thing of two people who had both been left behind deciding, for a few hours, not to be alone. It was not love. It was not even, Deborah told herself afterwards, quite a one-night stand. It was closer to a truce. A short peace in a long war with silence.
+In the morning, Ron was gone before she woke. On the table was a note in handwriting that sloped like his shoulders: Don’t read anything into it. Just glad I was here. Deborah read it twice, then put it in the junk drawer with the takeaway menus and the instruction booklet for the microwave, where it stayed for years.
+She did not see him again after that. Not because she didn’t want to. Because the summer ended, and with it the truce, and Deborah went back to the shape of her days. Then, in December, came the Christmas party at the supermarket where she worked nights on the tills.
+It was the kind of party where the managers got drunk first and the staff got drunk second and by eleven o’clock nobody could remember why they were supposed to be having a good time. Deborah had not planned to meet anyone. She had, in fact, planned to leave early. But the music was too loud and the room was too hot and someone passed her a glass of something that tasted like orange and regret, and the next thing she knew she was in the car park with a man she had only ever nodded at across the warehouse, kissing him against the rough brick wall because the world had become so small and so loud that the only way to make sense of it was to shut her eyes and let someone else be in charge for a minute.
+It was not thought-free. Not really. Even in the fog of the party, part of her knew exactly what she was doing. She was proving something to herself — that she could still be touched without being hurt, that she could step outside the shape of her grief for one night and come back to it the next day, lighter. It was not a fantasy. It was an experiment. And like most experiments conducted in car parks at midnight, it had consequences she did not see until later.
+She did not see Ron again after that either. But the summer with him had already done something she could not undo. It had reminded her body that it was not only a vessel for grief. It had reminded her that pleasure did not always have to be earned, or justified, or hidden.
+Owen was born in late September. Deborah told herself he was the result of the Christmas party. She told herself this so often that for a long time she believed it. It was easier than the truth, which was that she had stopped taking the pill in August, after Ron’s note, not because she had planned it but because some part of her wanted to keep something from that summer alive. Not him — not Ron — but the feeling of having been in a kitchen where someone sat across from her and drank tea and did not leave.
+She never told Callum. She never told Owen either, not in so many words. She let the story settle into the ordinary shape of their lives: a meeting at a party, a pregnancy, a boy who grew up with his father’s silence and his mother’s unspoken decisions hanging over him like furniture nobody was allowed to move.
+Standing in her own kitchen that morning, having just named the father she had never spoken of, Deborah understood something she had not understood before. The house at number nine had never been the only thing joining people who had no right to be joined. She had been doing it for years — stitching Owen to a night she had tried to forget, stitching Callum to a silence she had worn like a coat, stitching herself to a summer that had nothing to do with love and everything to do with not being left alone in a hot kitchen.
+The kettle clicked. The radiator groaned. Somewhere in the street a car door slammed. Deborah picked up the box of photographs and opened it again, not to look, but because her hands needed something to do. The photo of Niall was at the bottom, faded now, the edges curling. She had almost thrown it out once, years ago. Something had stopped her. She could not remember what.
+Now she did.
+It was the same thing that had stopped her from throwing away Ron’s note. The same thing that had made her keep Owen’s hospital wristband in a drawer long after he had outgrown it. The same thing that made Callum keep the key to a house that had never belonged to him under his pillow.
+We keep what we cannot bear to lose, even when we have already lost it.
+Deborah closed the box. She stood up. She walked to the stairs and put her hand on the bannister and listened. Upstairs, Callum’s breathing was even again. The house was quiet. The father in the chair was quiet too. For the first time in nineteen years, the silence in the kitchen did not feel heavy. It felt, if anything, like something that might finally be spoken through.
+She went upstairs. She knocked once, softly, on his door.
