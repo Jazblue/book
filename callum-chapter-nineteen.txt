@@ -1,0 +1,101 @@
+{
+"@context": "https://schema.org",
+"@type": "WebPage",
+"name": "Callum, Chapter 19",
+"url": "https://jazblue.github.io/book/callum-chapter-nineteen.html"
+}
+Callum, Chapter 19
+:root {
+--bg: #0f1115;
+--panel: #171a21;
+--panel-2: #202532;
+--text: #f3f4f6;
+--muted: #a9b0be;
+--accent: #8b9fff;
+--border: rgba(255,255,255,0.08);
+--shadow: 0 20px 50px rgba(0,0,0,0.35);
+}
+* { box-sizing: border-box; }
+body {
+margin: 0;
+font-family: Georgia, "Times New Roman", serif;
+background: radial-gradient(circle at top, #1c2233 0%, var(--bg) 55%);
+color: var(--text);
+line-height: 1.7;
+}
+.wrap { max-width: 980px; margin: 0 auto; padding: 32px 20px 60px; }
+.hero, .panel {
+background: rgba(23, 26, 33, 0.92);
+border: 1px solid var(--border);
+border-radius: 18px;
+box-shadow: var(--shadow);
+backdrop-filter: blur(6px);
+}
+.hero { padding: 28px; margin-bottom: 22px; }
+.eyebrow {
+display: inline-block;
+font-size: 12px;
+text-transform: uppercase;
+letter-spacing: 0.12em;
+color: #d9c27a;
+margin-bottom: 10px;
+}
+h1 { margin: 0 0 10px; font-size: clamp(30px, 5vw, 48px); line-height: 1.08; }
+.sub { margin: 0; color: var(--muted); font-size: 18px; max-width: 44rem; }
+.panel { padding: 22px; margin-bottom: 18px; }
+.story { white-space: pre-wrap; font-size: 19px; }
+.story p { margin: 0 0 1.1em; }
+.back { display: inline-block; margin-bottom: 18px; color: #c7d2ff; }
+.audio-grid { display: grid; gap: 14px; }
+.audio-card {
+background: var(--panel-2);
+border: 1px solid var(--border);
+border-radius: 14px;
+padding: 16px;
+}
+.audio-card h3 {
+margin: 0 0 6px; font-size: 18px;
+font-family: Inter, system-ui, sans-serif;
+}
+.audio-card p {
+margin: 0 0 12px; color: var(--muted); font-size: 14px;
+font-family: Inter, system-ui, sans-serif;
+}
+audio { width: 100%; margin-bottom: 10px; }
+.chapter-nav a { color: #c7d2ff; text-decoration: none; font-family: Inter, system-ui, sans-serif; }
+.chapter-nav { padding: 0 4px; }
+&larr; Previous chapter Back to index &rarr;
+&larr; Back
+Callum
+Chapter Nineteen: The Street That Wasn’t
+The air on the other side of the door tasted different. Not wrong, exactly. Just older. Like a room that has been closed for a long time and has forgotten what fresh air smells like.
+He stood on the step for a full minute before he understood that the street had changed. Not the houses — not at first. Number nine was still there, at the far end, the same porch, the same gap in the curtain where Megan had stood watching him the day before. But the road was narrower. The pavements were cracked in a way they were not cracked on Alder Lane. The streetlight above him was a different shape: taller, thinner, the kind that cast long, thin shadows that did not look like they belonged to the people who walked beneath them.
+Callum stepped out. The door clicked shut behind him. When he turned to check, the handle was the same brass knob he had fitted himself, but the lock was different. Older. The sort of lock that needs a key cut in a shape they do not make anymore.
+He did not have the key. Not the one to the house, anyway. The key under his pillow was still there. The key to number nine was in his pocket, warm from his hand. He took it out. It looked the same. It felt the same. But when he held it up to the streetlight, the metal seemed to absorb the light rather than reflect it, and for a second he thought he could see something moving inside the blade, the way you can see smoke inside a glass jar.
+He put it back in his pocket and walked.
+The silence was the first thing that was wrong. Alder Lane at night was never completely silent. There was always a car, always a fox, always the hum of the distant town. This street had none of those things. It had a silence so complete it sounded like a noise. Callum could hear his own heartbeat in his ears. He could hear the blood in his wrists. He could hear the fabric of his jeans brushing together as he walked. Everything else was gone.
+He passed number seven. There were no curtains. The windows were open, but there was no light inside. He could see into the front room. There was a sofa, but it was covered in dust sheets. There was a television, but the screen was gone. There was a photograph on the mantelpiece, but he could not make out the faces from the pavement. He did not stop to look closer. Something in his chest told him not to go into other people’s houses here, even if the doors were unlocked, even if the lights were off.
+Number eight was next. The garden was overgrown. Not wild — tended, but by someone who did not know when to stop. The hedge was a foot too high. The grass was long enough to brush his ankles. The shed at the bottom of the garden was the same shed he had broken into months before, but the door was new. Painted red. The shed he remembered had been grey, the paint flaking, the hinge loose. This one looked brand new. Too new. As though it had been built yesterday by someone who had never seen the original and had only a story to go on.
+Callum walked faster.
+He reached the corner of the lane and stopped. Alder Lane, he knew, turned left here and ran for another half-mile before it met the main road. This lane did not turn. It went straight ahead into a darkness so thick it looked like a wall. Not the dark of a country road at midnight. The dark of somewhere that has had the lights switched off on purpose.
+He looked back the way he had come. His house was there, number eleven, the porch light on, the curtains drawn. He could see the shape of his mother in the kitchen window, standing at the sink. She was not moving. She was just standing. He could not see her face. He could not tell if she was watching him or looking at the tap or staring into space the way she did when she was thinking about things she would not say.
+He looked forward again. The dark lane waited.
+He thought about going back. He thought about knocking on his own front door and walking inside and going to bed and pretending that the moment when the door opened onto a street that wasn’t Alder Lane had never happened. He thought about calling out to his mother. She would come. She would open the door. She would see the street — not the one she lived on — and she would say something practical. Something about being tired. Something about the brain making patterns in the dark. She would not see the difference. She never saw the difference.
+But Callum saw it. He had seen it since he was a child. He had seen the breathing in the walls. He had heard the footsteps upstairs when the house was empty. He had found the key under his pillow and unlocked a door that should not have opened. He had walked into number nine and found a version of his own street that was almost the same and almost wrong, like a face you know well reflected in water that is not quite still.
+He put his hand in his pocket. His fingers closed around the key. It was warmer now. Almost hot.
+He walked into the dark.
+After twenty paces, the light changed. It did not get brighter. It got older. The orange glow of the streetlamp faded to a yellow so deep it was almost brown. The air grew thicker, heavier, as though the street was remembering a time when it had been underwater, or under snow, or under something worse than either. Callum’s breath came out in front of him. It was not cold enough for that. The air was not cold. It was the air of a place that had stopped caring about temperature a long time ago.
+He heard a sound ahead. Not a voice. Not a footstep. The sort of sound a house makes when it settles, but coming from the street itself. The pavement, he thought, was breathing.
+He kept going.
+At the end of the lane, where Alder Lane should have met the main road, there was no road. There was a wall. Old brick, taller than a man, the mortar black with age. There was no gate. There was no gap. There was only the wall and the dark and the sound of breathing coming from the other side.
+Callum stopped. He stood with his back to the wall he had come from and his face to the wall that had no door, and he felt the weight of the key in his pocket pressing against his leg like a hand holding on. He understood, then, that the street was not a street at all. It was a throat. And he was at the part where it decided whether to swallow or speak.
+He put the key in his hand. He held it up to the dark. It glowed, faintly, the way metal glows when it has been heated and is cooling down. Not bright. Just enough to show that it was there. Enough to show that it was not a normal key.
+“I know you’re in there,” he said.
+The breathing stopped.
+For a long time there was nothing. No wind. No cars. No foxes. Just Callum and the wall and the silence of a street that had been waiting for someone to speak to it in the right way.
+Then, from the other side of the brick, a voice. Not human. Not exactly. It was the voice the house made when it creaked, but shaped into words. Slow. Thick. The sort of voice that had not been used for a long time and was remembering how.
+You came back.
+Callum’s mouth went dry. “Who are you?”
+The voice did not answer. Instead, the brick in front of him changed. Not moved — changed. The mortar softened, the way ice softens under a tap, and the bricks leaned inward just enough to show that there was a gap behind them. A doorway. No frame. No door. Just an opening into a space that was darker than the street and warmer than the house and older than both.
+The key in Callum’s hand pulsed once. A heartbeat. Stronger than his own.
+He stepped through the wall.
