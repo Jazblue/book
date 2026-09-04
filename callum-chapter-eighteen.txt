@@ -1,0 +1,150 @@
+{
+"@context": "https://schema.org",
+"@type": "WebPage",
+"name": "Callum, Chapter 18",
+"url": "https://jazblue.github.io/book/callum-chapter-eighteen.html"
+}
+Callum, Chapter 18
+:root {
+--bg: #0f1115;
+--panel: #171a21;
+--panel-2: #202532;
+--text: #f3f4f6;
+--muted: #a9b0be;
+--accent: #8b9fff;
+--border: rgba(255,255,255,0.08);
+--shadow: 0 20px 50px rgba(0,0,0,0.35);
+}
+* { box-sizing: border-box; }
+body {
+margin: 0;
+font-family: Georgia, "Times New Roman", serif;
+background: radial-gradient(circle at top, #1c2233 0%, var(--bg) 55%);
+color: var(--text);
+line-height: 1.7;
+}
+.wrap { max-width: 980px; margin: 0 auto; padding: 32px 20px 60px; }
+.hero, .panel {
+background: rgba(23, 26, 33, 0.92);
+border: 1px solid var(--border);
+border-radius: 18px;
+box-shadow: var(--shadow);
+backdrop-filter: blur(6px);
+}
+.hero { padding: 28px; margin-bottom: 22px; }
+.eyebrow {
+display: inline-block;
+font-size: 12px;
+text-transform: uppercase;
+letter-spacing: 0.12em;
+color: #d9c27a;
+margin-bottom: 10px;
+}
+h1 { margin: 0 0 10px; font-size: clamp(30px, 5vw, 48px); line-height: 1.08; }
+.sub { margin: 0; color: var(--muted); font-size: 18px; max-width: 44rem; }
+.panel { padding: 22px; margin-bottom: 18px; }
+.story { white-space: pre-wrap; font-size: 19px; }
+.story p { margin: 0 0 1.1em; }
+.back { display: inline-block; margin-bottom: 18px; color: #c7d2ff; }
+.audio-grid { display: grid; gap: 14px; }
+.audio-card {
+background: var(--panel-2);
+border: 1px solid var(--border);
+border-radius: 14px;
+padding: 16px;
+}
+.audio-card h3 {
+margin: 0 0 6px; font-size: 18px;
+font-family: Inter, system-ui, sans-serif;
+}
+.audio-card p {
+margin: 0 0 12px; color: var(--muted); font-size: 14px;
+font-family: Inter, system-ui, sans-serif;
+}
+audio { width: 100%; margin-bottom: 10px; }
+.chapter-nav a { color: #c7d2ff; text-decoration: none; font-family: Inter, system-ui, sans-serif; }
+.chapter-nav { padding: 0 4px; }
+&larr; Previous chapter Back to index &rarr;
+&larr; Back
+Callum
+Chapter Eighteen: The Knock From Inside
+Callum heard her on the stairs before she reached the landing. He had been awake for an hour, watching the ceiling breathe, and her footsteps came up the house like something he had been expecting and dreading at the same time.
+He did not answer at first. He lay there with the duvet pulled up to his chin and the key under the pillow pressing against his temple, and he listened to her stop outside the door. He could hear her breathing through the wood. It was the same breathing he had heard in the walls the night before, when the house had decided to tell him things he did not want to know.
+“Callum?”
+Her voice was smaller than usual. Not frightened — his mother was not a woman who got frightened easily — but careful, as though she were approaching something that might bite if she moved too fast.
+“I know you’re awake,” she said.
+He turned his head on the pillow. The room was dark, the curtains drawn, the computer screen off. Outside, the streetlight threw a faint orange line under the gap at the bottom of the door. He had locked it from the inside, as he always did now. Not because he was afraid of her coming in. Because he was afraid of what might come in with her if he left it open.
+“Go away,” he said. The words came out quieter than he meant them to.
+“I can’t.”
+He heard her sit down on the floor outside. The landing board creaked under her weight in the place it always did, the loose one near the bathroom door. Callum had tripped over it when he was seven. Deborah had laughed and said, “That board’s been there longer than you have.” It had.
+“I need to tell you something,” she said through the door.
+“About number nine?”
+“About more than number nine.”
+Callum sat up. His feet found the cold floor. He could feel the house around him, the way it always did in the mornings now — not as a collection of rooms and windows and the damp patch in the hall cupboard, but as a single thing, breathing, waiting. He had started to think of it as a body. His body. Not hers. It had decided that when he put the lock on his door, and it had accepted the lock the way a body accepts a scar: not happily, but permanently.
+“I’m not dressed,” he called.
+“I’m not coming in.”
+He got up. He pulled on his jeans and the hoodie that had been on the floor for three days. He unlocked the door and opened it just wide enough to see her face. She was sitting on the floor with her back against the wall and her hands wrapped around a mug. Her hair was not brushed. She looked older than she had the day before, and younger than he remembered.
+“I named him,” she said.
+Callum’s throat tightened. He had been hearing the name in his head since the night before, though he had not known it was a name then. Just a shape. A weight in the room.
+“Niall,” he said.
+Deborah nodded. She looked down at her mug as though it might tell her the next part. “I never said it out loud. Not once. Not to you. Not to Owen. Not to anyone.”
+“Why now?”
+“Because the house made me.”
+Callum stepped back from the door and let her in. She stood up and walked past him into the room, and the room did not feel like his room anymore. It felt like a place she had not been allowed to enter for a long time. She sat on the edge of his bed and looked around at the posters and the shelf of games and the laptop closed on the desk, and she looked at him the way mothers look at sons who have become strangers in the same house: with love, but also with the shock of realising she had stopped seeing him a long time ago.
+“You know about number nine,” she said.
+“I’ve been there.”
+“I know. Megan told me.”
+The name hung in the air between them. Callum had not heard it spoken out loud by anyone but Megan, and hearing it from his mother made it feel heavier. Not dangerous. Just true.
+“What happened there?” she asked.
+“It breathes,” he said. “It listens. It shows you things.”
+“What things?”
+He hesitated. He could not tell her about the father in the room downstairs. Not yet. He could not tell her that the breathing he had heard in the walls was the same breathing he had heard in the house at number nine, and that the house at number nine had been waiting for him since before he was born.
+“The past,” he said. “It shows you the past.”
+Deborah sipped from her mug. Her hands were shaking, just enough to see. Callum had not seen her hands shake since the night Owen had been born and the midwife had said the baby was fine and she had cried for an hour afterwards without saying why.
+“I wasn’t honest with you,” she said. “About where you came from.”
+“I know.”
+“You know?”
+“I found something. In the shed. At the bottom of the garden.”
+Deborah went very still. The mug hovered halfway between the bed and her mouth. “What did you find?”
+“Old letters. Photographs. A birth certificate with a name on it that isn’t the one you gave me.”
+She put the mug down on the floor. She did not look at him. She looked at the wall, at the poster of the racing car that had been there since he was twelve, and Callum wondered if she could see it at all.
+“I met a man,” she said. “The summer you were ten. His name was Ron. He was a plumber. He came to fix the kitchen tap and he stayed for tomatoes and pasta and the kind of conversation that doesn’t need a future to make it worth having. He had lost his wife the year before. A car crash. He used to listen for the front door after she died.”
+Callum said nothing. He had not known this. The Ron in the shed box had been a name only, scribbled on the back of an envelope, no face, no story. Now the name had a kitchen and a mug of tea and a grief that sounded like his mother’s grief, though he had never put them together before.
+“I wasn’t in love with him,” Deborah said. “I don’t think he was in love with me either. We were both just… left. And the summer was hot, and the house was quiet, and for a few weeks I wasn’t the only person in it who knew what it was like to wait for someone who wasn’t coming back.”
+She looked at him then, and her eyes were bright with the kind of crying that does not spill over. Callum had inherited those eyes. He saw them in the mirror every morning and tried not to look too closely at what they had been waiting for.
+“Owen isn’t from the Christmas party,” she said. “That’s what I told myself. That’s what I told everyone. But he’s from the summer. From Ron. I stopped taking the pill after Ron left. Not because I planned it. Because some part of me wanted… I don’t know. A reason to wake up in the morning that wasn’t the tap or the school run or the silence at the end of the day.”
+The room felt smaller. The house felt smaller. Callum looked at the door, at the lock he had fitted, and he thought about the key under his pillow, the key to number nine, the key Megan had given him. Keys, he thought, were just ways of keeping things out or letting things in. His mother had been keeping things out for nineteen years. He had been letting things in for months.
+“Does Owen know?” he asked.
+“No.”
+“Does he need to?”
+Deborah stood up. She walked to the window and pulled the curtain back just enough to let the streetlight in. Her face was in profile, and Callum could see the line of her jaw, the way it set when she was thinking about something she had spent a long time not thinking about.
+“I don’t know,” she said. “Maybe he does. Maybe we all do.”
+She turned back to him. She looked at the lock on the door. She looked at the key under the pillow on his bed. She did not ask about either. She did not have to.
+“There’s something else,” she said.
+Callum’s stomach turned over. “What?”
+“The night I named him. Niall. When I said it downstairs… you heard it, didn’t you?”
+He nodded. He could not speak. The memory of that moment — the fraction of a second longer between his breaths, the way the name had come through the floorboards and the walls and the nineteen years of silence and found him — was still too big to put into words.
+“I wasn’t the only one who heard it,” Deborah said. “Owen heard it too. He was in his room. He came downstairs at two in the morning and stood in the kitchen doorway and said, ‘Mum, who’s Niall?’”
+Callum closed his eyes. The house was breathing around them, through the walls, through the floor, through the gaps in the doorframe. It had been breathing for a long time. It would keep breathing after they were gone.
+“What did you tell him?” he asked.
+“Nothing. I told him he’d dreamed it. I sent him back to bed.”
+“He didn’t believe you.”
+“No.” She sat down again on the bed, beside him now, not opposite. “He didn’t.”
+They sat in the dark for a long time. Callum could hear his own breathing and hers and the house’s breathing, and they were all different rhythms trying to find the same time. Outside, a fox went through the bin at the end of the garden. Somewhere in the street, a car alarm started and stopped and started again. The father in the kitchen did not move. He had been named, and naming had not made him leave. It had only made him present.
+Callum reached under his pillow and took out the key. He held it in his palm. It was cold. It was always cold, even when the room was warm. He had stopped asking why.
+“I need to go back,” he said.
+“To number nine?”
+“Tonight.”
+Deborah did not tell him not to. She did not say it was dangerous or stupid or too late. She looked at the key in his hand and then at his face, and she saw something in him that she had not seen before: not fear, not exactly, but a kind of resolve that frightened her more than any ghost.
+“I’m coming with you,” she said.
+Callum shook his head. “No. You need to talk to Owen. You need to tell him the truth.”
+“And if I can’t?”
+“Then I’ll tell him.”
+He stood up. He put the key in his pocket. He opened the door and stepped out onto the landing, and the house seemed to exhale around him, as though it had been holding its breath for nineteen years and was finally glad someone was doing something.
+At the top of the stairs, Callum paused. He looked back at his mother. She was still sitting on the bed, the mug on the floor beside her, her hair not brushed, her eyes the colour of his own eyes looking back at him from a future he had not known he would have.
+“Don’t wait up,” he said.
+She smiled. It was a small smile, and it broke halfway, but it was there. “I never do,” she said.
+Callum went downstairs. He put his coat on. He took the key from his pocket and held it in his hand until he reached the front door. The lock — the one he had fitted, the one he had tested a hundred times — was turned. He had not turned it. Someone else had.
+He stopped. He listened. The house was quiet. The breathing had stopped. Not because the house had gone to sleep. Because it was waiting for him to open the door.
+Callum turned the handle. He pulled.
+The door opened onto a street that was not Alder Lane.
